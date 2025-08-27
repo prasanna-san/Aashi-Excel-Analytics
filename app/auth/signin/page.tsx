@@ -1,6 +1,9 @@
-
+import './signin.css';
 export default function page() {
   return (
-    <div>signin</div>
+    <div className="signin-page">
+      <h1 className="testclass">Sign in Details</h1>
+
+    </div>
   )
 }

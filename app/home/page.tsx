@@ -143,7 +143,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 via-white to-yellow-100 flex flex-col font-sans">
       {/* Header with logo */}
-      <header className="flex items-center justify-between px-8 py-6 bg-green-900 shadow-lg">
+      <header className="flex items-center justify-between px-8 py-6 bg-gradient-to-br from-green-800 to-green-600 shadow-lg">
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-green-400 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
             {/* Placeholder logo */}
@@ -152,8 +152,8 @@ export default function HomePage() {
           <h1 className="text-3xl font-extrabold text-white tracking-tight drop-shadow">Excel File Uploader</h1>
         </div>
         <nav className="flex gap-8">
-          <a href="#about" className="text-yellow-300 hover:text-white font-semibold transition">About</a>
-          <a href="#contact" className="text-yellow-300 hover:text-white font-semibold transition">Contact</a>
+          <a href="#about" className="text-white-300 hover:text-white font-semibold transition">About</a>
+          <a href="#contact" className="text-white-300 hover:text-white font-semibold transition">Contact</a>
         </nav>
       </header>
 
@@ -331,7 +331,7 @@ export default function HomePage() {
             {history.length === 0 ? (
               <div className="text-green-400 text-xs">No files uploaded yet.</div>
             ) : (
-              <ul className="space-y-2 h-40 overflow-y-auto pr-1">
+              <ul className="space-y-2 h-48 overflow-y-auto pr-1">
                 {history.map(item => (
                   <li key={item.timestamp} className="flex items-center justify-between border-b border-green-100 py-1">
                     <div className="flex-1 min-w-0">
@@ -351,14 +351,14 @@ export default function HomePage() {
       </main>
 
       {/* About & Contact */}
-      <footer className="bg-green-900 text-white px-8 py-12 mt-8 shadow-inner">
+      <footer className="bg-gradient-to-br from-green-800 to-green-600 text-white px-8 py-12 mt-8 shadow-inner">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
           <section id="about" className="flex-1">
-            <h3 className="font-extrabold text-2xl mb-2 text-yellow-300 tracking-tight">About</h3>
+            <h3 className="font-extrabold text-2xl mb-2 text-white-300 tracking-tight">About</h3>
             <p className="text-green-100 text-lg">This is a placeholder for the About section. Describe your Excel file uploading service here.</p>
           </section>
           <section id="contact" className="flex-1">
-            <h3 className="font-extrabold text-2xl mb-2 text-yellow-300 tracking-tight">Contact</h3>
+            <h3 className="font-extrabold text-2xl mb-2 text-white-300 tracking-tight">Contact</h3>
             <p className="text-green-100 text-lg">This is a placeholder for the Contact section. Add your contact information or a form here.</p>
           </section>
         </div>
